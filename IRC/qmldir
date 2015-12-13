@@ -1,0 +1,5 @@
+module net.lew21.IRC
+Client 1.0 Client.qml
+Connection 1.0 Connection.qml
+Conversation 1.0 Conversation.qml
+plugin qmlircplugin

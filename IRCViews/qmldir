@@ -1,0 +1,4 @@
+module net.lew21.IRCViews
+Client 1.0 Client.qml
+Conversation 1.0 Conversation.qml
+JoinChannel 1.0 JoinChannel.qml
