@@ -5,7 +5,19 @@ This project really needs another name. Unfortunately, I've run out of names.
 
 ## Building and running
 ```sh
-	% qbs run
+% qbs run
+```
+
+If you haven't used qbs on this computer before, you might need to configure it before building the project:
+```sh
+% qbs setup-toolchains --detect
+% qbs setup-qt --detect
+% qbs config defaultProfile qt-5-5-1 # use the Qt 5 profile detected by setup-qt here.
+```
+
+To run multiple instances on the same machine, you may execute the binary directly:
+```sh
+% qt-*/install-root/bin/net.lew21.irc-client
 ```
 
 ## License - GNU AGPLv3+
