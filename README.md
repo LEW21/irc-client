@@ -1,6 +1,8 @@
 # LEW21/irc-client
 Simple IRC client using Qt Quick
 
+![screenshot](https://raw.githubusercontent.com/LEW21/irc-client/master/screenshot.png)
+
 This project really needs another name. Unfortunately, I've run out of names.
 
 ## Building and running
