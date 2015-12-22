@@ -42,13 +42,13 @@ private:
 		while (m_socket.canReadLine())
 		{
 			char line[8096];
-			auto len = m_socket.readLine(line, sizeof(line));
+			qint64 len = m_socket.readLine(line, sizeof(line));
 			emit message(QString::fromUtf8(line, len));
 		}
 	}
 
 public:
-	auto is_connected() const -> bool { return m_socket.state() == QAbstractSocket::ConnectedState; }
+	bool is_connected() const { return m_socket.state() == QAbstractSocket::ConnectedState; }
 
 signals:
 	void connectedChanged();

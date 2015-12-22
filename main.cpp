@@ -4,10 +4,10 @@
 
 int main(int argc, char** argv)
 {
-	QApplication app{argc, argv};
+	QApplication app(argc, argv);
 
-	auto appPath = QDir{app.applicationDirPath()};
-	auto importsPath = appPath.filePath("../lib/qt/imports");
+	QDir appPath = app.applicationDirPath();
+	QString importsPath = appPath.filePath("../lib/qt/imports");
 
 	QQmlApplicationEngine engine;
 	engine.addImportPath(importsPath);

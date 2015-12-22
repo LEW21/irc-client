@@ -12,7 +12,7 @@ Project {
 	DynamicLibrary {
 		name: "qmlircplugin"
 		files: ["IRC/*.hpp"]
-		cpp.cxxLanguageVersion: "c++14"
+		//cpp.cxxLanguageVersion: "c++11"
 		Depends { name: "Qt"; submodules: ["qml", "network"] }
 
 		Group
@@ -42,7 +42,7 @@ Project {
 	Application {
 		name: "net.lew21.irc-client"
 		files: ["*.cpp"]
-		cpp.cxxLanguageVersion: "c++14"
+		//cpp.cxxLanguageVersion: "c++11"
 		Depends { name: "Qt"; submodules: ["gui", "quick", "widgets"] }
 
 		Group
